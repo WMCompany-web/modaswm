@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6a12e">
+  <meta name="description" content="WM Modas — roupas modernas, conforto e qualidade para todos os momentos.">
+  <title>WM Modas | Estilo é uma escolha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">✨ Estilo, conforto e qualidade para todos os momentos</div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="WM Modas início">
+      <span class="brand-mark">W<span>M</span></span><span class="brand-name">Modas</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Início</a><a href="#masculino" data-category-link="masculino">Masculino</a>
+      <a href="#feminino" data-category-link="feminino">Feminino</a><a href="#infantil" data-category-link="infantil">Infantil</a>
+      <a href="#tendencias">Tendências</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos"></label>
+      <button class="cart-button" id="openCart" aria-label="Abrir carrinho"><span>🛒</span><span class="cart-label">Carrinho</span><b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero-photo" src="assets/loja-hero.png" alt="Interior elegante de uma loja de roupas WM Modas">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">WM MODAS · NOVA COLEÇÃO</span>
+        <h1>ESTILO É UMA<br><em>ESCOLHA</em></h1>
+        <p>AQUI VOCÊ ENCONTRA!<br>Roupas modernas, conforto e qualidade para todos os momentos.</p>
+        <a class="primary-button" href="#produtos">Explorar coleção <span>↗</span></a>
+      </div>
+      <a class="scroll-cue" href="#beneficios" aria-label="Descer para ver mais">↓</a>
+    </section>
+
+    <section class="benefits wrap" id="beneficios">
+      <article class="benefit"><div class="benefit-icon"><img src="assets/entrega.png" alt=""></div><div><h3>Envios rápidos</h3><p>Em toda a região</p></div></article>
+      <article class="benefit"><div class="benefit-icon"><img src="assets/seguranca.png" alt=""></div><div><h3>Segurança e</h3><p>confiabilidade</p></div></article>
+      <article class="benefit"><div class="benefit-icon"><img src="assets/moda.png" alt=""></div><div><h3>Moda masculina</h3><p>e feminina</p></div></article>
+    </section>
+
+    <section class="categories wrap">
+      <div class="section-heading"><div><span class="eyebrow">ENCONTRE SEU ESTILO</span><h2>Compre por categoria</h2></div><p>Peças para acompanhar cada versão de você.</p></div>
+      <div class="category-grid">
+        <button class="category-card cat-men" data-filter="masculino"><span>01 / COLEÇÃO</span><strong>Masculino</strong><i>Explorar ↗</i></button>
+        <button class="category-card cat-women" data-filter="feminino"><span>02 / COLEÇÃO</span><strong>Feminino</strong><i>Explorar ↗</i></button>
+        <button class="category-card cat-kids" data-filter="infantil"><span>03 / COLEÇÃO</span><strong>Infantil</strong><i>Explorar ↗</i></button>
+        <button class="category-card cat-trend" data-filter="tendencias"><span>04 / SELEÇÃO</span><strong>Tendências</strong><i>Explorar ↗</i></button>
+      </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="wrap">
+        <div class="section-heading"><div><span class="eyebrow">SELEÇÃO WM</span><h2>Peças em destaque</h2></div><a class="text-link" href="#produtos" id="showAll">Ver todos os produtos ↗</a></div>
+        <div class="filter-row" role="group" aria-label="Filtrar produtos">
+          <button class="filter-chip active" data-filter="todos">Todos</button><button class="filter-chip" data-filter="masculino">Masculino</button><button class="filter-chip" data-filter="feminino">Feminino</button><button class="filter-chip" data-filter="infantil">Infantil</button><button class="filter-chip" data-filter="tendencias">Tendências</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>Nenhum produto encontrado. Tente outra busca.</p>
+      </div>
+    </section>
+
+    <section class="promo wrap" id="tendencias">
+      <div class="promo-copy"><span class="eyebrow">SEU PRÓXIMO LOOK</span><h2>Vista o que<br>faz você <em>sentir bem.</em></h2><p>Escolha suas peças favoritas e fale com a nossa equipe pelo WhatsApp para confirmar os detalhes do pedido.</p><a class="primary-button" href="#produtos">Encontrar meu estilo ↗</a></div>
+      <img src="assets/look-masculino.png" alt="Sugestão de look casual masculino em tons neutros">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main wrap">
+      <div><a class="brand brand-footer" href="#inicio"><span class="brand-mark">W<span>M</span></span><span class="brand-name">Modas</span></a><p>Moda para todos os momentos.<br>Seu estilo, sua escolha.</p><div class="footer-location">⌖ &nbsp; Pato Branco, PR</div></div>
+      <div><h3>Contato</h3><a href="https://wa.me/5546984006226" target="_blank" rel="noopener">WhatsApp: (46) 98400-6226</a><p>@ModasWMi<br>@ModasWMx<br>@ModasWMf</p></div>
+      <div><h3>Horário de atendimento</h3><p>SEG–SEX: 08:00–12:00 · 14:00–18:00<br>SÁB: 08:00–12:00<br>DOM: Não trabalhamos</p></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> WM Modas. Todos os direitos reservados.</div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Seu carrinho" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">SUA SELEÇÃO</span><h2>Meu carrinho <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-button" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><div class="empty-cart-icon">🛍</div><h3>Seu carrinho está vazio</h3><p>Encontre suas próximas peças favoritas.</p><button class="primary-button" id="continueShopping">Voltar para comprar</button></div>
+    <div class="cart-footer" id="cartFooter" hidden><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div><div class="subtotal"><span>Frete</span><span>A combinar</span></div><div class="total"><span>Total dos produtos</span><strong id="cartTotal">R$ 0,00</strong></div><p class="cart-note">O frete e a disponibilidade serão confirmados pelo vendedor.</p><button class="whatsapp-button" id="checkoutWhatsApp">Comunicar o vendedor via WhatsApp ↗</button><button class="clear-cart" id="clearCart">Esvaziar carrinho</button></div>
+  </aside>
+  <div class="product-detail-backdrop" id="productDetailBackdrop" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
