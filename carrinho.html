@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confira seu pedido na Modas WM e finalize pelo WhatsApp.">
+  <title>Meu carrinho | Modas WM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Modas WM - início"><span class="brand-mark"><small>Modas</small><b>W</b><i>M</i></span><span>Modas <em>WM</em></span></a>
+    <nav class="main-nav" aria-label="Menu principal">
+      <a class="nav-link" href="index.html">Continuar comprando</a>
+      <a class="nav-link active cart-nav" href="carrinho.html">Carrinho <span id="cartCount">0</span></a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Ativar modo escuro" title="Alternar aparência">◐</button>
+    </nav>
+  </header>
+  <main class="cart-page-main">
+    <section class="cart-section" id="carrinho">
+      <div class="location-line"><span><img class="localizacao" src="assets/localizacao.png" alt=""></span> Pato Branco, PR</div>
+      <h1 class="cart-title">MEU CARRINHO <span class="down-icon">↓</span></h1>
+      <div class="cart-panel" id="cartPanel"><img class="" src="assets/carrinho-vazio.png" alt=""></div>
+      <div class="cart-total-row"><strong>TOTAL: <span id="cartTotal">R$ 0,00</span></strong><button class="button button-dark" id="checkoutButton">Finalizar pelo WhatsApp</button></div>
+      <a class="cart-continue-link" href="index.html#produtos">← Continuar comprando</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html"><span class="brand-mark"><small>Modas</small><b>W</b><i>M</i></span></a>
+    <div class="footer-contact"><h3>CONTATO</h3><a href="https://wa.me/5546984006226" target="_blank" rel="noopener">◉ &nbsp; (46) 98400-6226</a><a href="https://instagram.com/ModasWMi" target="_blank" rel="noopener">◎ &nbsp; @ModasWMi</a></div>
+    <p class="copyright">© <span id="year"></span> Modas WM. Todos os direitos reservados.</p>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="carrinho.js"></script>
+</body>
+</html>
